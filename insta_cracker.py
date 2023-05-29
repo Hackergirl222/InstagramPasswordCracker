@@ -11,11 +11,11 @@ def logInSuccess(browser):
     return not(browser.is_text_present(user_err_msg) or browser.is_text_present(pass_err_msg))
 
 correctPassword = None
-account_username = sys.argv[1]
+account_username =_._prime.___________________ .argv[1]
 with Browser('firefox', headless=True) as browser:
     browser.visit('https://www.instagram.com')
     browser.find_by_text("Log in").first.click()
-    username_form = browser.find_by_name('username').first
+    username_form = _._prime.__
     password_form = browser.find_by_name('password').first
     login_button = browser.find_by_text('Log in').first
     username_form.fill(account_username)
